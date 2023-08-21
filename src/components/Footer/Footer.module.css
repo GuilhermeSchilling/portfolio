@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    background-image: linear-gradient(to right, rgb(0, 26, 255), rgb(52, 123, 255), rgb(52, 123, 255), rgb(0, 26, 255));
+}
+
+.space {
+    width: 0.2rem;
+    height: 100%;
+    background-color: #fff;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+
+.icon {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.iconcontainer {
+    display: flex;
+
+}
+
+.iconsep{
+    display: flex;
+    align-items: center;
+}

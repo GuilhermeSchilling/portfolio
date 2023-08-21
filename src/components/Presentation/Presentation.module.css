@@ -1,0 +1,30 @@
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.dev {
+    font-size: 6rem;
+    margin: 0px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    transition: all 0.5s ease;
+
+    &:hover{
+        transform:scale(1.01);
+    }
+}
+
+.age {
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+}

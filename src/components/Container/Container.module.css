@@ -1,0 +1,58 @@
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+    .projectMM {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .projectTitle {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0px;
+        text-decoration: none;
+        color: black;
+        transition: all 0.5s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            color: rgb(0, 26, 255);
+        }
+    }
+
+    .projectLink {
+        color: black;
+        text-decoration: none;
+    }
+
+    .gicon {
+        margin-top: 2rem;
+        font-size: 3rem;
+        transition: all 0.5s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.5);
+            color: rgb(0, 26, 255);
+        }
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    background-color: rgb(255, 255, 255);
+    padding: 5rem;
+    padding-top: 1em;
+}
+
+.acesslinks {
+    display: flex;
+    align-items: center;
+}

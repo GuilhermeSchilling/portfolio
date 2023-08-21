@@ -1,0 +1,30 @@
+.headerall {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em 20em;
+    background-image: linear-gradient( to right, rgb(0, 26, 255), rgb(52, 123, 255), rgb(52, 123, 255), rgb(0, 26, 255) );
+}
+
+.icon {
+    color: #000000;
+    font-size: 2rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+        transform: scale(1.5);
+        color: white;
+      }
+    
+}
+
+
+.title{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
