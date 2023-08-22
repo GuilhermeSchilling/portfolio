@@ -4,7 +4,7 @@ function Skills() {
     return (
         <div className={styles.container}>
 
-            <h1 className={styles.title}>Habilidades</h1>
+            <h1 className={styles.title}>Tecnologias</h1>
             <div className={styles.listcontainer}>
                 <div className={styles.list}>
                     <ul>
