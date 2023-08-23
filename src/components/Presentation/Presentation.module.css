@@ -2,6 +2,8 @@
     font-size: 2rem;
     font-weight: bold;
     margin: 0px;
+    color: var(--letter-color);
+    transition: all 0.5s ease;
 }
 
 .dev {
@@ -10,6 +12,7 @@
     font-weight: bold;
     letter-spacing: -3px;
     transition: all 0.5s ease;
+    color: var(--letter-color);
 
     &:hover{
         transform:scale(1.01);
@@ -19,6 +22,8 @@
 .age {
     font-size: 2rem;
     margin: 0px;
+    color: var(--letter-color);
+    transition: all 0.5s ease;
 }
 
 .container {
@@ -27,4 +32,6 @@
     align-items: center;
     flex-direction: column;
     height: 60vh;
+    background-color: var(--bg-color);
+    transition: all 0.5s ease;
 }

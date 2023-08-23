@@ -3,42 +3,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: var(--letter-color);
+    transition: all 0.5s ease;
 
     .projectMM {
-        width: 15rem;
+        width: 20rem;
         height: 15rem;
+        border-radius: 30px;
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
     }
 
     .projectTitle {
-        font-size: 3rem;
+        font-size: 2rem;
         text-transform: uppercase;
         font-weight: bold;
-        margin: 0px;
+        margin-top: 15px;
         text-decoration: none;
-        color: black;
+        color: var(--letter-color);
         transition: all 0.5s ease;
 
         &:hover {
             transform: scale(1.1);
-            color: rgb(0, 26, 255);
+            color: rgb(255, 255, 255);
         }
     }
 
     .projectLink {
-        color: black;
+        color: var(--letter-color);
         text-decoration: none;
+        transition: all 0.5s ease;
     }
 
     .gicon {
-        margin-top: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
         font-size: 3rem;
         transition: all 0.5s ease;
         cursor: pointer;
+        color: var(--icons-color);
 
         &:hover {
             transform: scale(1.5);
-            color: rgb(0, 26, 255);
+            color: rgb(255, 255, 255);
         }
     }
 }
@@ -47,9 +53,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-color);
     padding: 5rem;
     padding-top: 1em;
+    transition: all 0.5s ease;
 }
 
 .acesslinks {

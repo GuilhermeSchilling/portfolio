@@ -1,3 +1,12 @@
+:root {
+  --button-color:#D3D3D3;
+  --bg-color: #c5c4c5;
+  --letter-color: black;
+  --icons-color: black;
+  --icons-hover: white;
+  --header-n-footer:linear-gradient( to right, rgb(0, 26, 255), rgb(52, 123, 255), rgb(52, 123, 255), rgb(0, 26, 255) );
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +19,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+body::-webkit-scrollbar {
+  width: 8px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: black;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
 }

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(238, 234, 226);
+    background-color: var(--button-color);
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin: 0 auto;
@@ -10,25 +10,33 @@
     padding: 25px 20px;
     justify-content: space-around;
     width: 100%;
-    margin-bottom: 5em;
+    transition: all 0.5s ease;
 }
 
 .title{
     font-size: 3em;
     text-transform: uppercase;
-    
+    transition: all 0.5s ease;
+}
+
+.bgcolor{
+    background-color: var(--bg-color);
+    padding-bottom: 4em;
+    transition: all 0.5s ease;
 }
 
 .list{
     font-size: 1.5em;
     font-weight:bold;
     font-family: monospace;
+    transition: all 0.5s ease;
 }
 
 li{
     margin: 5px;
     text-decoration: none;
     list-style-type: none;
+    
 }
 
 ul{

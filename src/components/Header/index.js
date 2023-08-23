@@ -1,13 +1,22 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { IoDocumentText } from "react-icons/io5";
 import styles from './Header.module.css'
-
 function Header() {
     return (
         <header>
             <div className={styles.headerall}>
-                <h1 className={styles.title}>Portfólio</h1>
-                <div>
+                <div className={styles.all}>
+                    <h1 className={styles.title}>Portfólio</h1>
+                </div>
+                <div className={styles.all}>
+                    <div className={styles.darkbutton}>
+                        <input className={styles.checkdark} type="checkbox" name="theme" id="theme" />
+                        <label className={styles.label} htmlFor="theme">
+                            <BsFillSunFill className={styles.darkicon1}/>
+                            <BsFillMoonFill className={styles.darkicon2}/>
+                            <div className={styles.ball}></div>
+                        </label>
+                    </div>
                     <BsLinkedin
                         className={styles.icon}
                         onClick={() => window.open("https://www.linkedin.com/in/guilherme-schilling-619353229/", "_blank")}

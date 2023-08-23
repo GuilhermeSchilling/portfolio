@@ -1,30 +1,95 @@
 .headerall {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.1em 20em;
-    background-image: linear-gradient( to right, rgb(0, 26, 255), rgb(52, 123, 255), rgb(52, 123, 255), rgb(0, 26, 255) );
+    justify-content: space-between;
+    background-image: var(--header-n-footer);
+    transition: all 0.5s ease;
+}
+
+.darkbutton {
+    color: black;
+    margin-right: 6rem;
 }
 
 .icon {
-    color: #000000;
+    color: var(--icons-color);
     font-size: 2rem;
-    margin-left: 3rem;
+    margin-right: 2.5rem;
     cursor: pointer;
     transition: all 0.5s ease;
 
     &:hover {
         transform: scale(1.5);
-        color: white;
-      }
-    
+        color: var(--icons-hover);
+    }
+}
+
+icon.dark {
+    color: white;
 }
 
 
-.title{
-    color: rgb(0, 0, 0);
+.title {
+    color: var(--letter-color);
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
+    margin-left: 2.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.5s ease;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+}
+
+.checkdark {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: var(--letter-color);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: var(--icons-color);
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+}
+
+
+.label .ball {
+    margin-top: 5px;
+    margin-left: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkdark:checked+.label .ball {
+    transform: translateX(29px);
+}
+
+.darkicon2 {
+    color: #f1c40f;
+    margin-left: 2px;
+}
+
+.darkicon1 {
+    color: #f39c12;
+    margin-right: 2px;
 }
